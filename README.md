@@ -1,2 +1,2 @@
 # blogress
-DjangoとReactを使って製作中の自分向けブログシステムです。
+製作中の自分向けブログシステムです。DjangoとReactを使います。
