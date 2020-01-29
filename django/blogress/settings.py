@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-AUTH_USER_MODEL = 'users.User' # 追記
+AUTH_USER_MODEL = 'users.User'
 
 
 # Quick-start development settings - unsuitable for production
@@ -82,7 +82,7 @@ REST_AUTH_SERIALIZERS = {
 }
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware', # 追記
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

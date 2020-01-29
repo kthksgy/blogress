@@ -14,6 +14,7 @@ import reducer from './modules';
 /* ページコンポーネント */
 import TopPage from './components/pages/TopPage';
 import LoginPage from './components/pages/LoginPage';
+import PostEditPage from './components/pages/PostEditPage';
 
 /**
  * ブログタイトル
@@ -55,8 +56,9 @@ const App = () => {
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
-          <Route exact path='/login' component={LoginPage}/>
           <Route exact path='/' component={TopPage}/>
+          <Route exact path='/login' component={LoginPage}/>
+          <Route exact path='/edit' component={PostEditPage}/>
         </Switch>
       </BrowserRouter>
     </Provider>

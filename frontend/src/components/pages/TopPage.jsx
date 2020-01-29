@@ -23,7 +23,7 @@ const TopPage = () => {
             .get('/posts/', )
             .then(res=>{setPosts(res.data);})
             .catch(err=>{console.log(err);});
-    });
+    }, []);
 
     return(
         <TopPageTemplate className={classes.page} posts={posts} />
